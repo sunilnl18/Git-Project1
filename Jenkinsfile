@@ -15,6 +15,7 @@ pipeline {
 		stage ('build') {
 			steps {
 			    dir ('Git-Project1'){
+				    echo "Hello Sunil"
 				    sh 'mvn clean install -DskipTests'
 			    }
 			}
